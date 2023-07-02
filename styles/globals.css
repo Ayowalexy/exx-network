@@ -1,7 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +24,51 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: #7F56D9 !important;
+}
+.react-toggle--checked .react-toggle-thumb  {
+  border-color: #7F56D9 !important;
+}
+
+.anim2 {
+  color: #70707B !important;
+}
+
+.exp {
+  position: absolute !important;
+  width: 95% !important;
+  height: 90vh !important;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  margin: 30px;
+}
+
+.toaster {
+  animation: anime;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transition: ease all 500ms;
+}
+
+@keyframes anime {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 90px;
+    opacity: 1;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
