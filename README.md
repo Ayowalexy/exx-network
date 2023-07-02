@@ -21,5 +21,8 @@ Following a Functional componenet architecture, each login is adequately modular
 ##Limitations
 Mobile Responsiveness. Due to the fact that bulk of the time was spent on getting the business logic right, I couldn't work on the mobile version of the app. 
 
+##Improvements
+There are still some room for improvement, more modularization and little touches. 
+
 
 ###Thanks for taking out time to consider my application, Looking forward
